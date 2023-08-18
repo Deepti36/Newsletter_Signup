@@ -26,10 +26,10 @@ app.post("/",function(req,res){
     ]
   };
   const jsonData=JSON.stringify(data);
-  const url="https://us8.api.mailchimp.com/3.0/lists/2e8e3590e7";
+  const url="https://us21.api.mailchimp.com/3.0/lists/88de6522c4";
   const options={
     method :"POST",
-    auth :"SaiDinesh28:79e579b04b5a64ead45fb84e3a37c935-us8"
+    auth :"Deepti36:048cca2946db03422c0045928faa5259-us21"
   }
 const request=  https.request(url,options,function(response){
   if(response.statusCode===200){
@@ -56,5 +56,5 @@ app.listen(process.env.PORT || 3000,function(){
   console.log("server is running on port 3000");
 });
 // mailchimp API key
-// 79e579b04b5a64ead45fb84e3a37c935-us8
-//2e8e3590e7  list id
+// 048cca2946db03422c0045928faa5259-us21
+//88de6522c4 list id
